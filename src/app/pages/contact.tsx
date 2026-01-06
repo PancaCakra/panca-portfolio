@@ -1,5 +1,5 @@
-import { Mail, Linkedin } from 'lucide-react';
-import { useLanguage } from '../contexts/language-context';
+import { Mail, Linkedin } from "lucide-react";
+import { useLanguage } from "../contexts/language-context";
 
 interface ContactPageProps {
   onNavigateToWork?: () => void;
@@ -11,26 +11,32 @@ export function ContactPage({ onNavigateToWork }: ContactPageProps) {
   const content = {
     en: {
       pageTitle: "Let's Connect",
-      pageDesc: "I'm open to internship opportunities, full-time roles, and design collaborations. Feel free to reach out if you'd like to work together.",
+      pageDesc:
+        "I'm open to internship opportunities, full-time roles, and design collaborations. Feel free to reach out if you'd like to work together.",
       sectionTitle: "Get In Touch",
-      sectionDesc: "I'm open to internship opportunities, full-time roles, and design collaborations. Feel free to reach out directly—I'd love to hear from you!",
+      sectionDesc:
+        "I'm open to internship opportunities, full-time roles, and design collaborations. Feel free to reach out directly—I'd love to hear from you!",
       email: "Email",
       linkedIn: "LinkedIn Profile",
       availTitle: "Open to Opportunities",
-      availDesc: "I'm currently seeking internship opportunities, full-time roles, and design collaborations. Response time is typically within 24-48 hours.",
-      viewWork: "View My Work"
+      availDesc:
+        "I’m open to internship opportunities, full-time roles, and design collaborations. I typically respond within 1–2 days.",
+      viewWork: "View My Work",
     },
     id: {
       pageTitle: "Mari Terhubung",
-      pageDesc: "Saya terbuka untuk kesempatan magang, posisi penuh waktu, dan kolaborasi desain. Jangan ragu untuk menghubungi saya jika Anda ingin bekerja sama.",
+      pageDesc:
+        "Saya terbuka untuk kesempatan magang, posisi penuh waktu, dan kolaborasi desain. Jangan ragu untuk menghubungi saya jika Anda ingin bekerja sama.",
       sectionTitle: "Hubungi Saya",
-      sectionDesc: "Saya terbuka untuk kesempatan magang, posisi penuh waktu, dan kolaborasi desain. Silakan hubungi saya langsung—saya akan senang mendengar dari Anda!",
+      sectionDesc:
+        "Saya terbuka untuk kesempatan magang, posisi penuh waktu, dan kolaborasi desain. Silakan hubungi saya langsung—saya akan senang mendengar dari Anda!",
       email: "Email",
       linkedIn: "Profil LinkedIn",
       availTitle: "Terbuka untuk Peluang",
-      availDesc: "Saya saat ini sedang mencari kesempatan magang, posisi penuh waktu, dan kolaborasi desain. Waktu respons biasanya dalam 24-48 jam.",
-      viewWork: "Lihat Karya Saya"
-    }
+      availDesc:
+        "Saya terbuka untuk peluang magang, posisi penuh waktu, dan kolaborasi desain. Saya biasanya merespons pesan dalam waktu 1–2 hari.",
+      viewWork: "Lihat Karya Saya",
+    },
   };
 
   const t = content[language];
@@ -40,12 +46,10 @@ export function ContactPage({ onNavigateToWork }: ContactPageProps) {
       {/* Page Header */}
       <section className="relative overflow-hidden bg-gray-50 border-b border-gray-100">
         <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-br from-indigo-100/40 via-purple-50/30 to-transparent blur-3xl"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-24 relative">
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">{t.pageTitle}</h1>
-          <p className="text-gray-600 text-lg max-w-3xl">
-            {t.pageDesc}
-          </p>
+          <p className="text-gray-600 text-lg max-w-3xl">{t.pageDesc}</p>
         </div>
       </section>
 
@@ -68,8 +72,8 @@ export function ContactPage({ onNavigateToWork }: ContactPageProps) {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold mb-2">{t.email}</h3>
-                  <a 
-                    href="mailto:jauzapancaerucakra@gmail.com" 
+                  <a
+                    href="mailto:jauzapancaerucakra@gmail.com"
                     className="text-gray-600 hover:text-gray-900 transition-colors break-all block"
                   >
                     jauzapancaerucakra@gmail.com
@@ -85,8 +89,8 @@ export function ContactPage({ onNavigateToWork }: ContactPageProps) {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold mb-2">{t.linkedIn}</h3>
-                  <a 
-                    href="https://www.linkedin.com/in/jauza-panca/" 
+                  <a
+                    href="https://www.linkedin.com/in/jauza-panca/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900 transition-colors block"
