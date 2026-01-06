@@ -1,9 +1,9 @@
-import { ProjectCard } from '../components/project-card';
-import { ArrowRight } from 'lucide-react';
-import { useLanguage } from '../contexts/language-context';
-import berUangThumbnail from 'figma:asset/562556db7c8dd8bb0a5ddd1c16408c8ec58976a8.png';
-import tennisThumbnail from 'figma:asset/f455eda8304f770e618ec77098eda24899548324.png';
-import ispThumbnail from 'figma:asset/60e2b7e2f7079ee0210504cde893d7ffd57611d5.png';
+import { ProjectCard } from "../components/project-card";
+import { ArrowRight } from "lucide-react";
+import { useLanguage } from "../contexts/language-context";
+import berUangThumbnail from "../../assets/562556db7c8dd8bb0a5ddd1c16408c8ec58976a8.png";
+import tennisThumbnail from "../../assets/f455eda8304f770e618ec77098eda24899548324.png";
+import ispThumbnail from "../../assets/60e2b7e2f7079ee0210504cde893d7ffd57611d5.png";
 
 interface HomePageProps {
   onNavigateToWork: () => void;
@@ -12,70 +12,82 @@ interface HomePageProps {
   onProjectClick?: (project: any) => void;
 }
 
-export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToContact, onProjectClick }: HomePageProps) {
+export function HomePage({
+  onNavigateToWork,
+  onNavigateToAbout,
+  onNavigateToContact,
+  onProjectClick,
+}: HomePageProps) {
   const { language } = useLanguage();
 
   const content = {
     en: {
       greeting: "Hi, I'm Panca",
       heroTitle: "UI Designer crafting clean and intuitive digital interfaces",
-      heroDesc: "Focused on visual clarity, usability, and meaningful user experiences.",
+      heroDesc:
+        "Focused on visual clarity, usability, and meaningful user experiences.",
       viewWork: "View My Work",
       contactMe: "Contact Me",
       selectedWork: "Selected Work",
       workDesc: "A curated collection of recent projects",
       aboutTitle: "About Me",
-      aboutDesc: "I'm a UI Designer with a technical background in Informatics Engineering, passionate about crafting visually clean and user-friendly digital products. I believe great design bridges the gap between functionality and aesthetics, creating experiences that are both beautiful and intuitive.",
+      aboutDesc:
+        "I'm a UI Designer with a technical background in Informatics Engineering, passionate about crafting visually clean and user-friendly digital products. I believe great design bridges the gap between functionality and aesthetics, creating experiences that are both beautiful and intuitive.",
       moreAbout: "More About Me",
       contactTitle: "Let's Work Together",
-      contactDesc: "I'm currently available for freelance projects and full-time opportunities. Let's create something amazing together.",
+      contactDesc:
+        "I'm currently available for freelance projects and full-time opportunities. Let's create something amazing together.",
       getInTouch: "Get In Touch",
       projectBerUang: {
         title: "BerUang",
         description: "Personal finance management platform",
-        category: "UI Design / Website"
+        category: "UI Design / Website",
       },
       projectISP: {
         title: "Internet Service Provider Website",
         description: "Telecommunication service platform",
-        category: "UI Design / Website"
+        category: "UI Design / Website",
       },
       projectTennis: {
         title: "Tennis Club Website",
         description: "Sports club branding and information",
-        category: "UI Design / Website"
-      }
+        category: "UI Design / Website",
+      },
     },
     id: {
       greeting: "Halo, saya Panca",
-      heroTitle: "UI Designer yang menciptakan antarmuka digital yang bersih dan intuitif",
-      heroDesc: "Fokus pada kejelasan visual, kegunaan, dan pengalaman pengguna yang bermakna.",
+      heroTitle:
+        "UI Designer yang menciptakan antarmuka digital yang bersih dan intuitif",
+      heroDesc:
+        "Fokus pada kejelasan visual, kegunaan, dan pengalaman pengguna yang bermakna.",
       viewWork: "Lihat Karya Saya",
       contactMe: "Hubungi Saya",
       selectedWork: "Karya Pilihan",
       workDesc: "Koleksi kurasi dari proyek-proyek terbaru",
       aboutTitle: "Tentang Saya",
-      aboutDesc: "Saya adalah UI Designer dengan latar belakang teknis di bidang Teknik Informatika, yang passionate dalam menciptakan produk digital yang bersih secara visual dan ramah pengguna. Saya percaya desain yang hebat menjembatani kesenjangan antara fungsionalitas dan estetika, menciptakan pengalaman yang indah dan intuitif.",
+      aboutDesc:
+        "Saya adalah UI Designer dengan latar belakang teknis di bidang Teknik Informatika, yang passionate dalam menciptakan produk digital yang bersih secara visual dan ramah pengguna. Saya percaya desain yang hebat menjembatani kesenjangan antara fungsionalitas dan estetika, menciptakan pengalaman yang indah dan intuitif.",
       moreAbout: "Selengkapnya Tentang Saya",
       contactTitle: "Mari Bekerja Sama",
-      contactDesc: "Saya saat ini terbuka untuk proyek freelance dan peluang penuh waktu. Mari ciptakan sesuatu yang luar biasa bersama.",
+      contactDesc:
+        "Saya saat ini terbuka untuk proyek freelance dan peluang penuh waktu. Mari ciptakan sesuatu yang luar biasa bersama.",
       getInTouch: "Hubungi Saya",
       projectBerUang: {
         title: "BerUang",
         description: "Platform manajemen keuangan pribadi",
-        category: "Desain UI / Website"
+        category: "Desain UI / Website",
       },
       projectISP: {
         title: "Website Penyedia Layanan Internet",
         description: "Platform layanan telekomunikasi",
-        category: "Desain UI / Website"
+        category: "Desain UI / Website",
       },
       projectTennis: {
         title: "Website Klub Tenis",
         description: "Branding dan informasi klub olahraga",
-        category: "Desain UI / Website"
-      }
-    }
+        category: "Desain UI / Website",
+      },
+    },
   };
 
   const t = content[language];
@@ -87,9 +99,9 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
       title: t.projectBerUang.title,
       description: t.projectBerUang.description,
       category: t.projectBerUang.category,
-      role: 'UI Designer',
-      tools: 'Figma',
-      type: 'Website UI Design',
+      role: "UI Designer",
+      tools: "Figma",
+      type: "Website UI Design",
     },
     {
       id: 9,
@@ -97,9 +109,9 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
       title: t.projectISP.title,
       description: t.projectISP.description,
       category: t.projectISP.category,
-      role: 'UI Designer',
-      tools: 'Figma',
-      type: 'Website UI Design',
+      role: "UI Designer",
+      tools: "Figma",
+      type: "Website UI Design",
     },
     {
       id: 7,
@@ -107,9 +119,9 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
       title: t.projectTennis.title,
       description: t.projectTennis.description,
       category: t.projectTennis.category,
-      role: 'UI Designer',
-      tools: 'Figma',
-      type: 'Website UI Design',
+      role: "UI Designer",
+      tools: "Figma",
+      type: "Website UI Design",
     },
   ];
 
@@ -119,7 +131,7 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
       <section id="home" className="relative overflow-hidden">
         {/* Background Gradient */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-indigo-100/40 via-purple-50/30 to-transparent blur-3xl -z-10"></div>
-        
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left Column - Text */}
@@ -128,9 +140,7 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 {t.heroTitle}
               </h1>
-              <p className="text-gray-600 text-lg max-w-xl">
-                {t.heroDesc}
-              </p>
+              <p className="text-gray-600 text-lg max-w-xl">{t.heroDesc}</p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
                   onClick={onNavigateToWork}
@@ -154,7 +164,10 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
                 {/* Decorative elements */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-200/30 via-purple-200/20 to-pink-200/30 rounded-full blur-2xl"></div>
                 <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-indigo-300/40 rounded-full blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div
+                  className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-300/30 rounded-full blur-3xl animate-pulse"
+                  style={{ animationDelay: "1s" }}
+                ></div>
               </div>
             </div>
           </div>
@@ -196,7 +209,10 @@ export function HomePage({ onNavigateToWork, onNavigateToAbout, onNavigateToCont
             className="inline-flex items-center gap-2 text-gray-900 font-medium hover:gap-3 transition-all group"
           >
             {t.moreAbout}
-            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            <ArrowRight
+              size={18}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </button>
         </div>
       </section>

@@ -1,9 +1,9 @@
-import { WorkProjectCard, WorkProject } from '../components/work-project-card';
+../../assetsimport { WorkProjectCard, WorkProject } from '../components/work-project-card';
 import { useLanguage } from '../contexts/language-context';
-import berUangThumbnail from 'figma:asset/562556db7c8dd8bb0a5ddd1c16408c8ec58976a8.png';
-import tennisThumbnail from 'figma:asset/f455eda8304f770e618ec77098eda24899548324.png';
-import churchThumbnail from 'figma:asset/13fe596af0102fcb3ffa0061656855854b4cef6f.png';
-import ispThumbnail from 'figma:asset/60e2b7e2f7079ee0210504cde893d7ffd57611d5.png';
+import berUangThumbnail from '../../assets/562556db7c8dd8bb0a5ddd1c16408c8ec58976a8.png';
+import tennisThumbnail from 'f../../assets/f455eda8304f770e618ec77098eda24899548324.png';
+import churchThumbnail from '../../assets/13fe596af0102fcb3ffa0061656855854b4cef6f.png';
+import ispThumbnail from '../../assets/60e2b7e2f7079ee0210504cde893d7ffd57611d5.png';
 
 interface WorkPageProps {
   onProjectClick: (project: WorkProject) => void;
