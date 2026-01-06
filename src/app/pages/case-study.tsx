@@ -28,7 +28,7 @@ import churchFinalUI3 from "../../assets/b975f4ceecdee1e457b123622e7c21393599786
 import churchHero from "../../assets/47006263c09db965e5e0ceaea499e0090de441d4.png";
 import ispWireframe1 from "../../assets/3fa5946c07289cd05328e666f7528b10f04e5170.png";
 import ispWireframe2 from "../../assets/4b5135c113af6ced0a833d1d0fb92fedc51ae63f.png";
-import ispHighFidelity1 from "f../../assets/244cff67b2b59c62763376a15b928e70cdba2f44.png";
+import ispHighFidelity1 from "../../assets/244cff67b2b59c62763376a15b928e70cdba2f44.png";
 import ispHighFidelity2 from "../../assets/66b76ca6a73ba04e0c0ff708bc35508b8d5beedd.png";
 import ispFinalUI1 from "../../assets/8c649bf47b043b1de3472256a772d3b41c6cdd58.png";
 import ispFinalUI2 from "../../assets/f73aa1ae978bd7dde8b54f33f28da3f6e6245e6d.png";
