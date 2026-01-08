@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-   "scripts": {
-    "dev": "node ./node_modules/vite/bin/vite.js",
+  "scripts": {
+    "dev": "vite",
     "build": "node ./node_modules/vite/bin/vite.js build",
-    "preview": "node ./node_modules/vite/bin/vite.js preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
