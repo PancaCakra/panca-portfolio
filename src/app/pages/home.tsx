@@ -1,9 +1,12 @@
 import { ProjectCard } from "../components/project-card";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../contexts/language-context";
+
 import berUangThumbnail from "../../assets/562556db7c8dd8bb0a5ddd1c16408c8ec58976a8.png";
 import tennisThumbnail from "../../assets/f455eda8304f770e618ec77098eda24899548324.png";
 import ispThumbnail from "../../assets/60e2b7e2f7079ee0210504cde893d7ffd57611d5.png";
+
+import { HeroVisual } from "../components/hero-visual";
 
 interface HomePageProps {
   onNavigateToWork: () => void;
@@ -159,16 +162,8 @@ export function HomePage({
             </div>
 
             {/* Right Column - Visual */}
-            <div className="relative">
-              <div className="relative w-full aspect-square max-w-lg mx-auto">
-                {/* Decorative elements */}
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-200/30 via-purple-200/20 to-pink-200/30 rounded-full blur-2xl"></div>
-                <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-indigo-300/40 rounded-full blur-3xl animate-pulse"></div>
-                <div
-                  className="absolute bottom-1/4 right-1/4 w-40 h-40 bg-purple-300/30 rounded-full blur-3xl animate-pulse"
-                  style={{ animationDelay: "1s" }}
-                ></div>
-              </div>
+            <div className="relative hidden lg:flex justify-center lg:justify-end">
+              <HeroVisual />
             </div>
           </div>
         </div>
